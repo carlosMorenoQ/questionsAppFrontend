@@ -39,7 +39,7 @@ export const Questions = () => {
             <h1 className="d-flex justify-content-center text-center my-5">
                 Questions
             </h1>
-            <ul className="list-group">
+            <ul className="list-group mb-5">
                 {questions.map(data =>
                     <li key={data?.id}
                         className="list-group-item list-group-item-action d-flex justify-content-between align-items-center"

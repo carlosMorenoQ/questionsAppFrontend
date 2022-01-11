@@ -1,6 +1,6 @@
 import { LOADED_FAILURE, LOADED_SUCCESS, LOADING } from "../types/questionType"
 
-const URL_BASE = 'http://localhost:8080';
+const URL_BASE = 'https://question-app-carlos.herokuapp.com';
 
 export function fetchQuestions() {
     return async dispatch => {

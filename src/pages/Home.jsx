@@ -31,7 +31,7 @@ export const Home = ({ auth }) => {
 
     return (
         <div className="container my-5">
-            <h1 className="d-flex justify-content-center mt-1"> HOME </h1>
+            <h1 className="d-flex text-primary justify-content-center mt-1"> HOME </h1>
             <h6 className="d-flex justify-content-center  mt-4"> Welcome {userLogged.displayName&&`${userLogged.displayName},`} to the question and answer app. </h6>
             <div className='d-flex justify-content-center  mt-3'>
                 <button onClick={handleGoToQuestions} className="btn btn-danger">View Questions</button>
