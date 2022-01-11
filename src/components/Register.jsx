@@ -26,11 +26,11 @@ export default function Register() {
     return (<>
         <div className="container mt-2">
             <form className="w-50 mx-auto" onSubmit={handleRegister}>
-                <h4 className="d-flex justify-content-center text-center mb-4">
-                    Register with mail and password
-                </h4>
+                {/* <h4 className="d-flex justify-content-center text-center mb-4">
+                    Registrarse
+                </h4> */}
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Nombre</label>
                     <input
                         type="text"
                         className="form-control shadow-sm"
@@ -42,7 +42,7 @@ export default function Register() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
                     <input
                         type="email"
                         className="form-control shadow-sm"
@@ -54,7 +54,7 @@ export default function Register() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label">Contraseña</label>
                     <input
                         type="password"
                         className="form-control shadow-sm"
@@ -65,7 +65,7 @@ export default function Register() {
                     />
                 </div>
                 <div className="d-flex align-items-center flex-column mt-5">
-                    <button type="submit" className="btn btn-outline-danger">Register</button>
+                    <button type="submit" className="btn btn-outline-success">Registrar</button>
                 </div>
             </form>
         </div>

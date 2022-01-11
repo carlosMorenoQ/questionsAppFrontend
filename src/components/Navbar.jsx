@@ -5,13 +5,13 @@ import { Offcanvas } from './Offcanvas'
 export const Navbar = ({ auth }) => {
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-light bg-dark ">
+        <nav className="navbar navbar-expand-sm navbar-light bg-primary">
             <div className="container-fluid">
 
-                <span className="navbar-brand text-danger">
+                <span className="navbar-brand text-light">
                     <img
-                        src="https://www.hoganassessments.com/wp-content/uploads/2013/08/qa_logo.png"
-                        alt="logo"
+                        src="https://sites.google.com/site/plataformanacionalmalaga/_/rsrc/1468741992306/preguntas-frecuentes/question.png?height=100&width=50"
+                        alt="logo"  
                         width={40}
                         height={30}
                         className="d-inline-block align-text-top" />
@@ -26,14 +26,14 @@ export const Navbar = ({ auth }) => {
                             <Link
                                 style={{ textDecoration: 'none' }}
                                 to="/">
-                                <span className="nav-link active text-danger" aria-current="page">| Home</span>
+                                <span className="nav-link active text-light" aria-current="page">Inicio</span>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 style={{ textDecoration: 'none' }}
                                 to="questions">
-                                <span className="nav-link text-danger" >| Questions</span>
+                                <span className="nav-link text-light" >Preguntas</span>
                             </Link>
                         </li>
 
@@ -43,25 +43,25 @@ export const Navbar = ({ auth }) => {
                                     <Link
                                         style={{ textDecoration: 'none' }}
                                         to="new">
-                                        <span className="nav-link text-danger" >| New</span>
+                                        <span className="nav-link text-light" >Nueva Pregunta</span>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link
                                         style={{ textDecoration: 'none' }}
                                         to="list">
-                                        <span className="nav-link text-danger" tabIndex="-1" aria-disabled="true">| List</span>
+                                        <span className="nav-link text-light" tabIndex="-1" aria-disabled="true">Mis preguntas</span>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link
                                         style={{ textDecoration: 'none' }}
                                         to="favorites">
-                                        <span className="nav-link text-danger" tabIndex="-1" aria-disabled="true">| Favorites</span>
+                                        <span className="nav-link text-light" tabIndex="-1" aria-disabled="true">Favoritos</span>
                                     </Link>
                                 </li>
                                 <li style={{ cursor: 'pointer' }} className="nav-item">
-                                    <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" className="nav-link text-danger" tabIndex="-1" aria-disabled="true">| My Profile</span>
+                                    <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" className="nav-link text-light" tabIndex="-1" aria-disabled="true">Sesion</span>
                                 </li>
 
                                 <Offcanvas />

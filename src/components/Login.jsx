@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { loginEmailPassword, loginGoogle } from '../actions/authAction';
+import { loginEmailPassword } from '../actions/authAction';
+// import { loginEmailPassword, loginGoogle } from '../actions/authAction';
 import { useForm } from '../hooks/useForm';
 
 export default function Login() {
@@ -19,19 +20,19 @@ export default function Login() {
         reset();
     }
 
-    const handleGoogle = () => {
-        dispatch(loginGoogle(email, password))
-    }
+    // const handleGoogle = () => {
+    //     dispatch(loginGoogle(email, password))
+    // }
 
 
     return (<>
         <div className="container mt-2">
             <form className="w-50 mx-auto" onSubmit={handleLogin}>
-                <h4 className="d-flex justify-content-center text-center mb-4">
+                {/* <h4 className="d-flex justify-content-center text-center mb-4">
                     Login
-                </h4>
+                </h4> */}
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
                     <input
                         type="email"
                         className="form-control shadow-sm"
@@ -43,7 +44,7 @@ export default function Login() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label">Contraseña</label>
                     <input
                         type="password"
                         className="form-control shadow-sm"
@@ -54,8 +55,8 @@ export default function Login() {
                     />
                 </div>
                 <div className="d-flex align-items-center flex-column mt-5">
-                    <button type="submit" className="btn btn-outline-danger">Login</button>
-                    <button onClick={handleGoogle} className="btn btn-danger mt-2">Sign in with Google</button>
+                    <button type="submit" className="btn btn-outline-success">Ingresar</button>
+                    {/* <button onClick={handleGoogle} className="btn btn-danger mt-2">Sign in with Google</button> */}
                 </div>
             </form>
         </div>

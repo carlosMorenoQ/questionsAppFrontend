@@ -37,7 +37,7 @@ export const Questions = () => {
     return (
         <div className="container mt-2 w-50 mx-auto">
             <h1 className="d-flex justify-content-center text-center my-5">
-                Questions
+                Preguntas
             </h1>
             <ul className="list-group mb-5">
                 {questions.map(data =>
@@ -55,7 +55,7 @@ export const Questions = () => {
                             !favorites.find(fav => fav === data?.id) &&
                             id &&
                             (id !== data?.userId) &&
-                            <button onClick={() => handleAddToFavorite(data?.id)} className="badge bg-danger rounded-pill">Add Favorite</button>
+                            <button onClick={() => handleAddToFavorite(data?.id)} className="badge bg-success rounded-pill">favorita</button>
                         }
                     </li>
                 )

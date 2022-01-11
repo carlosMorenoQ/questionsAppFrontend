@@ -13,7 +13,7 @@ export const Offcanvas = ({ login }) => {
         <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div className="offcanvas-header">
                 <h5 id="offcanvasRightLabel">
-                    {name? 'Profile': login ? 'Login' : 'Register'}
+                    {name? 'Sesion': login ? 'Ingreso' : 'Registro'}
                 </h5>
                 <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>

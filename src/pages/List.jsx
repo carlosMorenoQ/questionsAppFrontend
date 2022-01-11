@@ -24,7 +24,7 @@ export const List = () => {
     return (
         <div className="container mt-2 w-50 mx-auto">
             <h1 className="d-flex justify-content-center text-center my-5">
-                My Questions
+                Mis preguntas
             </h1>
             {questions?.length > 0 ?
                 <ul className="list-group">
@@ -42,10 +42,10 @@ export const List = () => {
                 :
                 <Fragment>
                     <div className='d-flex justify-content-center mt-3'>
-                        <h6>- You have no questions -</h6>
+                        <h6>- No tienes preguntas -</h6>
                     </div>
                     <div className='d-flex justify-content-center mt-3'>
-                        <button onClick={handleGoToNewQuestion} className="btn btn-danger shadow-sm ms-2">Add New Question</button>
+                        <button onClick={handleGoToNewQuestion} className="btn btn-danger shadow-sm ms-2">Agregar nueva pregunta</button>
                     </div>
                 </Fragment>
             }

@@ -46,7 +46,7 @@ export const Favorites = () => {
     return (
         <div className="container mt-2 w-50 mx-auto">
             <h1 className="d-flex justify-content-center text-center my-5">
-                Favorites
+                Favoritos
             </h1>
             {fav.length > 0 ?
                 <ul className="list-group">
@@ -61,7 +61,7 @@ export const Favorites = () => {
                                 {data?.question}
                             </h6>
 
-                            <button onClick={() => handleDeleteFavorite(data?.id)} className="badge bg-danger rounded-pill">Delete</button>
+                            <button onClick={() => handleDeleteFavorite(data?.id)} className="badge bg-success rounded-pill">Quitar</button>
                         </li>
                     )
                     }
@@ -69,10 +69,10 @@ export const Favorites = () => {
                 :
                 <Fragment>
                     <div className='d-flex justify-content-center mt-3'>
-                        <h6>- You have no favorite questions -</h6>
+                        <h6>- Aun no tienes preguntas en favoritos -</h6>
                     </div>
                     <div className='d-flex justify-content-center mt-3'>
-                        <button onClick={handleGoQuestions} className="btn btn-danger shadow-sm ms-2">Go to Questions</button>
+                        <button onClick={handleGoQuestions} className="btn btn-success shadow-sm ms-2">Ir a preguntas</button>
                     </div>
                 </Fragment>
             }

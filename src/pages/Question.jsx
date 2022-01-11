@@ -33,7 +33,7 @@ export const Question = () => {
                     <h5 className="card-title">{question.question}</h5>
                     {uId &&
                         <div className='d-flex justify-content-end mt-3'>
-                            <button onClick={() => setReply(true)} className="btn btn-outline-danger btn-sm shadow-sm">Reply</button>
+                            <button onClick={() => setReply(true)} className="btn btn-outline-success btn-sm shadow-sm">Responder</button>
                         </div>
                     }
                 </div>
@@ -53,7 +53,7 @@ export const Question = () => {
                                 <div className='d-flex'>
                                     {uId &&
                                     (question.answerVotes[uId] !== data?.answerId)&&
-                                        <button onClick={() => handleVote(data?.answerId)} className="badge bg-danger rounded-pill me-2">Like</button>
+                                        <button onClick={() => handleVote(data?.answerId)} className="badge bg-success rounded-pill me-2">Like</button>
                                     }
                                     <h6 className=''>votes: {data?.cantidadVotos}</h6>
                                 </div>
@@ -62,7 +62,7 @@ export const Question = () => {
                         }
                     </ul>
                     :
-                    <h5 className='text-center mt-5'>"No one has given answers to this question, be the first{!uId && ', register now!'}"</h5>
+                    <h5 className='text-center mt-5'>"Nadie a respondido aun, se el primero{!uId && ', register now!'}"</h5>
             }
         </div>
     )

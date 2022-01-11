@@ -36,7 +36,7 @@ export const Profile = () => {
                     </div>
                     :
                     <div className="d-flex justify-content-center">
-                        <img src='https://www.hoganassessments.com/wp-content/uploads/2013/08/qa_logo.png' width={100} alt="profilePic" />
+                        <img src='https://sites.google.com/site/plataformanacionalmalaga/_/rsrc/1468741992306/preguntas-frecuentes/question.png?height=100&width=100' width={100} alt="profilePic" />
                     </div>
             }
             <h4 className="text-center mt-4">
@@ -44,9 +44,9 @@ export const Profile = () => {
             </h4>
             <div className='d-flex justify-content-center mt-3'>
                 {userLogged.provider === 'password' &&
-                    <button onClick={() => setEdit(true)} className="btn btn-outline-danger btn-sm shadow-sm">Change your Name</button>
+                    <button onClick={() => setEdit(true)} className="btn btn-outline-success btn-sm shadow-sm">Cambiar tu nombre</button>
                 }
-                <button onClick={handleLogout} className="btn btn-danger shadow-sm ms-1">Sing Out</button>
+                <button onClick={handleLogout} className="btn btn-success shadow-sm ms-1">Salir</button>
             </div>
             {
                 edit &&
@@ -59,12 +59,12 @@ export const Profile = () => {
                             value={name}
                             onChange={handleInputChange}
                         ></input>
-                        <label htmlFor="floatingTextarea2">New name</label>
+                        <label htmlFor="floatingTextarea2">Nuevo nombre</label>
                     </div>
 
                     <div className="d-flex justify-content-center my-3">
-                        <button type="submit" className="btn btn-danger shadow-sm me-2">Send</button>
-                        <button onClick={() => setEdit(false)} className="btn btn-outline-danger shadow-sm ">Cancel</button>
+                        <button type="submit" className="btn btn-success shadow-sm me-2">Enviar</button>
+                        <button onClick={() => setEdit(false)} className="btn btn-outline-success shadow-sm ">Cancelar</button>
                     </div>
                 </form>
             }

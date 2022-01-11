@@ -34,7 +34,7 @@ export const New = () => {
 
     return (
         <form className="w-50 mx-auto" onSubmit={handleSendQuestion}>
-            <h1 className='my-5 text-center'>New Question</h1>
+            <h1 className='my-5 text-center'>Nueva pregunta</h1>
             <div className="form-floating mt-3">
                 <select
                     className="form-select shadow-sm"
@@ -49,7 +49,7 @@ export const New = () => {
                     <option value="WITH RESULT (OPEN BOX WITH LINK)">WITH RESULT (OPEN BOX WITH LINK)</option>
                     <option value="WITH EVIDENCE (OPEN BOX WITH VIDEO)">WITH EVIDENCE (OPEN BOX WITH VIDEO)</option>
                 </select>
-                <label htmlFor="floatingSelect">Type</label>
+                <label htmlFor="floatingSelect">Tipo</label>
             </div>
 
             <div className="form-floating mt-3">
@@ -67,7 +67,7 @@ export const New = () => {
                     <option value="SOCIAL SCIENCES">SOCIAL SCIENCES</option>
                     <option value="LANGUAGE">LANGUAGE</option>
                 </select>
-                <label htmlFor="floatingSelect">Category</label>
+                <label htmlFor="floatingSelect">Categoria</label>
             </div>
 
             <div className="form-floating mt-3">
@@ -78,11 +78,11 @@ export const New = () => {
                     value={question}
                     onChange={handleInputChange}
                 ></textarea>
-                <label htmlFor="floatingTextarea2">Question</label>
+                <label htmlFor="floatingTextarea2">Pregunta</label>
             </div>
 
             <div className="d-flex justify-content-center my-3">
-                <button type="submit" className="btn btn-danger shadow-sm ">Save</button>
+                <button type="submit" className="btn btn-success shadow-sm ">Guardar</button>
             </div>
 
         </form>
